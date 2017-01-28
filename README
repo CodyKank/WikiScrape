@@ -1,12 +1,9 @@
- ___       __   ___  ___  __    ___  ________  ________  ________  ________  ________  _______      
-|\  \     |\  \|\  \|\  \|\  \ |\  \|\   ____\|\   ____\|\   __  \|\   __  \|\   __  \|\  ___ \     
-\ \  \    \ \  \ \  \ \  \/  /|\ \  \ \  \___|\ \  \___|\ \  \|\  \ \  \|\  \ \  \|\  \ \   __/|    
- \ \  \  __\ \  \ \  \ \   ___  \ \  \ \_____  \ \  \    \ \   _  _\ \   __  \ \   ____\ \  \_|/__  
-  \ \  \|\__\_\  \ \  \ \  \\ \  \ \  \|____|\  \ \  \____\ \  \\  \\ \  \ \  \ \  \___|\ \  \_|\ \ 
-   \ \____________\ \__\ \__\\ \__\ \__\____\_\  \ \_______\ \__\\ _\\ \__\ \__\ \__\    \ \_______\
-    \|____________|\|__|\|__| \|__|\|__|\_________\|_______|\|__|\|__|\|__|\|__|\|__|     \|_______|
-                                       \|_________|                                                 
-=====================================================================================================
+                   __      ___ _   _ ___                        
+                   \ \    / (_) |_(_) __| __ _ _ __ _ _ __  ___ 
+                    \ \/\/ /| | / / \__ \/ _| '_/ _` | '_ \/ -_)
+                     \_/\_/ |_|_\_\_|___/\__|_| \__,_| .__/\___|
+                                                     |_|        
+====================================================================================
 
 WikiScrape is a tool which can be useful for easily creating or moving Mediawikis without access
 to the old / copied Mediawiki server. This tool can be used to successfully gather all of the 
@@ -59,16 +56,19 @@ Link Usage
         - Click on "Go" or "Search".
         - This should bring up a page which has up to 500 of the images. Copy this link and use
           with the -images flag.
-        - #NOTE#: For now, wikiScrape only works on wikis with 500 or less images. To find more than
-          500 images, you'll have to first download the first set and then move pages and use that link.
+        - #NOTE#: For now, wikiScrape only works on wikis with 500 or less images. To find 
+          more than 500 images, you'll have to first download the first set and then move pages 
+          and use that link.
     * For the -titles flag:
         - The URL should be obtained from the wiki's Special Page's Oldest Pages.
-        - Once on the Oldest Pages (also known as 'Ancient Pages'), click the box which determines how
+        - Once on the Oldest Pages (also known as 'Ancient Pages'), click the box which 
+          determines how
           many pages are displayed.
         - Change the value to 500 and press 'Go'.
         - This is the link which should be used with the -titles flag.
-        - #NOTE#: For now, wikiScrape only works on wikis with 500 or less pages. To find more than
-          500 pages, you'll have to first download the first set and then move pages and use that link.
+        - #NOTE#: For now, wikiScrape only works on wikis with 500 or less pages. To find 
+          more than 500 pages, you'll have to first download the first set and then move pages 
+          and use that link.
 Bugs:
     * Please report Bugs found on Github.
 
