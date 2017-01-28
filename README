@@ -26,6 +26,29 @@ How to use
     * To download images, use the -images flag. To download the titles, use the -titles flag.
     * Example: wikiScrape -images "[URL for file list]" -titles "[URL for Ancient Pages]"
 
+Uploading the images
+    * Once the images are downloaded into their own directory, you must move the entire directory
+      to the target server (the new mediawiki) if not already there. Then, utilize Mediawiki's
+      image uploading maintenance script found within the maintenance direcory in the root level
+      of the new mediawiki (Assuming you already have the new Mediawiki installed and running.)
+    * Run the following command to upload the desired images.
+      php maintenance/importImages.php /path/to/images/directory
+    * More information on this command can be found at:
+      https://www.mediawiki.org/wiki/Manual:ImportImages.php
+
+Importing the titles
+    * The titles of the pages are required to allow us to use Mediawiki's Export and import tools.
+    * Once all of the titles are written to the file, open it in your favorite editor and copy
+      the entire document into your clipboard.
+    * Then, paste the results into the Special:Export page on the old mediawiki.
+    * Download the resulting XML file.
+    * On the new Mediawiki, navigate to the Special:Import page. 
+    * Click on Browse, and upload the XML file downloaded from the old mediawiki. This may take
+      some time. 
+    * All of the pages should be created now!
+    * #NOTE#: To create the Main Page, you must copy the source from the old Mediawiki and paste
+      it into the new Mediawiki's Main Page.
+
 Link Usage
     * For right now, it is really important to use the correct link for the Mediawiki depending
       which flag you are using.
